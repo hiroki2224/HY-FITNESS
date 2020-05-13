@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+body{
+    font-family: 'Spectral';
+    background-color: black;
+}
+header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+    width: 100%;
+}
+
+.header-logo{
+    text-align: center;
+}
+.logo img{
+    display: block;
+}
+
+.header-logo img{
+    margin: 0 auto;
+}
+
+.logo h1{
+    display: inline-block;
+    text-decoration: overline;
+    letter-spacing: 0.08em;
+}
+.header-logo h1{
+    font-size: 50px;
+}
+
+/* メニューバー */
+.menu-bar{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 60px;
+    overflow: hidden;
+}
+
+.menu-bar li:hover{
+    color: rgba(176,58,46,.9)
+}
+#category-menu{
+    color: white;
+    overflow: hidden;
+    float: left;
+}
+#category-menu a{
+    list-style: none;
+    padding-right: 100px;
+    font-size: 30px;
+    float: left;
+    text-decoration: none;
+}
+
+#page-menu{
+    overflow: hidden;
+    float: right;
+}
+
+#page-menu a{
+    padding-left: 100px;
+    font-size: 30px;
+    float: left;
+    text-decoration: none;
+}
+
+
+/* ここからmain */
+main{
+    padding-top: 271px;
+    clear: both;
+}
+
+#top-bn{
+    height: 800px;
+    background-image: url(../img/top-bn.png);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-top: 56.26px;
+    border-bottom: 1px solid white;
+}
+
+.bn-message{
+    position: absolute;
+    top: 60%;
+    right: 3%;
+    line-height: 1;
+}
+.message{
+    font-size: 70px;
+}
+.bn-message p{
+    font-size: 30px;
+    position: relative;
+}
+
+.shop-btn{
+    position: absolute;
+    top:140px;
+}
+.btn{
+    background-color: #B03A2E;
+    border-radius: 35px;
+    width: 150px;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 28px;
+}
+.btn:hover{
+    background-color: white;
+    color: #B03A2E;
+    cursor: pointer;
+}
+/* ギャラリー幅指定 */
+.gallery-width{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* コンテンツ間の幅 */
+.content-margin{
+    margin-top: 80px;
+}
+.trend-img{
+    overflow: hidden;
+    margin: 0 auto;
+}
+.gallery{
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.gallery-heading h2{
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    font-size: 40px;
+    display: inline-block;
+    border-bottom: 4px solid #B03A2E;
+}
+
+/* 小見出しとギャラリー画像群の中央寄せ */
+.gallery-heading,.gallery figure{
+    text-align: center;
+}
+
+/* ギャラリー画像と小見出しのマージン */
+.gallery-img{
+    margin-top: 40px;
+    /* border: 4px solid red; */
+    overflow: hidden;
+}
+
+
+#popular1-sec p{
+    opacity: 0;
+}
+#popular1:hover ~ #seemore{
+    opacity: 1;
+    position: absolute;
+}
+
+/* figureの横並び 幅指定 */
+.gallery figure{
+    width: 25%;
+    float: left;
+}
+
+/* floatのクリア */
+#new{
+    clear: both;
+}
+
+#campaign{
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    height: 700px;
+    background-image: url(../img/gym.jpg);
+    background-size: cover;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#campaign-message{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+
+#campaign-message h2{
+    font-size: 70px;
+    background: rgb(255,0,0,0);
+}
+.campaign-dt{
+    font-size: 32px;
+    background: rgb(255,0,0,0);
+}
+
+
+#category figure{
+    width: 33.33%;
+}
+.category-name{
+    font-size: 28px;
+}
+#category{
+    clear: both;
+}
+
+#ig{
+    overflow: hidden;
+}
+#ig-gallery{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#ig img:hover{
+    opacity: 0.4;
+}
+
+#mainig-sec{
+    position: relative;
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
+    float:left;
+}
+#main-ig{
+    display: block;
+    width: 100%;
+}
+.mainig-icon{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#mainig-sec:hover .mainig-icon{
+    opacity: 1;
+}
+
+#subigall{
+    float: left;
+    width: 66.67%;
+}
+.subig-sec{
+    overflow: hidden;
+    width: 25%;
+    height: auto;
+    float: left;
+    margin:0;
+    padding: 0;
+}
+#subig-sec1{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon1{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec1:hover #subig-icon1{
+    opacity: 1;
+}
+#subig-sec2{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon2{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec2:hover #subig-icon2{
+    opacity: 1;
+}
+#subig-sec3{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon3{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec3:hover #subig-icon3{
+    opacity: 1;
+}
+#subig-sec4{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon4{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec4:hover #subig-icon4{
+    opacity: 1;
+}
+#subig-sec5{
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+#subig-icon5{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec5:hover #subig-icon5{
+    opacity: 1;
+}
+#subig-sec6{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon6{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec6:hover #subig-icon6{
+    opacity: 1;
+}
+#subig-sec7{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon7{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec7:hover #subig-icon7{
+    opacity: 1;
+}
+#subig-sec8{
+    position: relative;
+    overflow: hidden;
+}
+#subig-icon8{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#subig-sec8:hover #subig-icon8{
+    opacity: 1;
+}
+
+.sub-ig{
+    width: 100%;
+    display: block;
+}
+
+#feedback{
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 2;
+}
+
+#feedback1{
+    font-size: 40px;
+}
+#feedback2{
+    font-size: 55px;
+}
+#feedback a{
+    font-size: 36px;
+    border-radius: 10px;
+}
+footer{
+    overflow: hidden;
+    color: black;
+}
+
+footer{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+.footer-logo{
+    position:relative;
+    left: 20px;
+    top: 30px;
+    float: left;
+}
+.footer-logo img{
+    position: relative;
+    left: 55px;
+}
+
+#copyright{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 140px;
+}
+
+footer ul{
+    float:right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer li{
+    float: left;
+    padding: 10px;
+}
+
+
+

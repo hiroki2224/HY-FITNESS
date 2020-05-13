@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+body{
+    font-family: 'Spectral';
+    background-color: black;
+}
+header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+    width: 100%;
+}
+
+.header-logo{
+    text-align: center;
+}
+.logo img{
+    display: block;
+}
+
+.header-logo img{
+    margin: 0 auto;
+}
+
+.logo h1{
+    display: inline-block;
+    text-decoration: overline;
+    letter-spacing: 0.08em;
+}
+.header-logo h1{
+    font-size: 50px;
+}
+
+/* メニューバー */
+.menu-bar{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 60px;
+    overflow: hidden;
+}
+
+.menu-bar li:hover{
+    color: rgba(176,58,46,.9)
+}
+#category-menu{
+    color: white;
+    overflow: hidden;
+    float: left;
+}
+#category-menu a{
+    list-style: none;
+    padding-right: 100px;
+    font-size: 30px;
+    float: left;
+    text-decoration: none;
+}
+
+#page-menu{
+    overflow: hidden;
+    float: right;
+}
+
+#page-menu a{
+    padding-left: 100px;
+    font-size: 30px;
+    float: left;
+    text-decoration: none;
+}
+
+main{
+    padding-top:331px;
+    clear: both;
+    background-image: url(../img/contact-bg5.jpg);
+    background-color:rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
+    background-size: cover;
+    border-bottom: 1px solid white;
+}
+main h2{
+    color: white;
+    font-size: 72px;
+}
+#content{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    width: 95%;
+}
+#contact{
+    padding-top: 40px;
+}
+#contact label{
+    color: black;
+}
+
+#contact,input,textarea,label{
+    display: block;
+    margin: 0 5px;
+}
+form{
+    font-size: 40px;
+    width: 40%;
+}
+input,textarea{
+    color: black;
+    padding: 10px;
+    width: 400px;
+}
+input,textarea{
+    width: 80%;
+    margin: 10px;
+}
+input:focus,textarea:focus{
+    border: solid #B03A2E;
+    background-color: black;
+    color: white;
+}
+
+.submit{
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 80%;
+    padding: 10px;
+    margin-top: 40px;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.footer-logo{
+    position:relative;
+    left: 20px;
+    top: 30px;
+    float: left;
+}
+.footer-logo img{
+    position: relative;
+    left: 55px;
+}
+
+#copyright{
+
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 140px;
+}
+
+footer ul{
+    float:right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer li{
+    float: left;
+    padding: 10px;
+}
